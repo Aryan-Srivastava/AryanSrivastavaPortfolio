@@ -135,7 +135,7 @@
 	transform: translate(-50%, -50%);
 }
 
-.btn {
+.Resume {
 	width: 130px;
 	height: 40px;
 	line-height: 42px;
@@ -143,13 +143,13 @@
 	border: none;
 	background: linear-gradient(0deg, rgb(37, 52, 77) 0%, rgb(0, 0, 0) 100%);
 }
-.btn:hover {
+.Resume:hover {
 	color: #7fffd4;
 	background: transparent;
 	box-shadow: none;
 }
-.btn:before,
-.btn:after {
+.Resume:before,
+.Resume:after {
 	content: "";
 	position: absolute;
 	top: 10px;
@@ -159,20 +159,20 @@
 	background: #09c2f0;
 	transition: 400ms ease all;
 }
-.btn:after {
+.Resume:after {
 	right: inherit;
 	top: inherit;
 	left: 0;
 	bottom: 0;
 }
-.btn:hover:before,
-.btn:hover:after {
+.Resume:hover:before,
+.Resume:hover:after {
 	width: 100%;
 	transition: 800ms ease all;
 }
 
 @media screen and (max-width: 500px) {
-	.btn {
+	.Resume {
 		margin-top: 5em;
 	}
 }
