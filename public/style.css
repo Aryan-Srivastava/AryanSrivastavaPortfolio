@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
 
-* {
+*,
+::before,
+::after {
 	margin: 0;
 	padding: 0;
 	cursor: none;
+	box-sizing: border-box;
 }
 
 /* Scrollbar */
@@ -41,10 +44,16 @@ main {
 
 .name {
 	font-family: "Roboto Mono", monospace;
-	color: #fff;
-	letter-spacing: 0.1rem;
 	font-size: 1.5em;
 	grid-row: 1;
+	letter-spacing: 0.1rem;
+	color: #fff;
+	transition: all 0.3s ease;
+}
+
+.name:hover {
+	transform: translate3d(0, -10px, 22px);
+	color: #ff0266;
 }
 
 /* Typing animation */
