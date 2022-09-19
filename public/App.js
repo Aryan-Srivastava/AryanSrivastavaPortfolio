@@ -102,6 +102,18 @@ particlesJS("particles-js", {
 	retina_detect: true,
 });
 
+// typing animation
+var typed = new Typed("#typed", {
+	stringsElement: "#typed-strings",
+	smartBackspace: true,
+	loop: true,
+	cursor: false,
+	typeSpeed: 80,
+	backSpeed: 70,
+	loopCount: Infinity,
+	showCursor: false,
+});
+
 // cursor
 
 const cursor = document.querySelector(".cursor");

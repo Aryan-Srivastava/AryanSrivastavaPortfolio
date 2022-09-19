@@ -126,17 +126,43 @@ main {
 	background: transparent;
 	transition: all 0.3s ease;
 	grid-row: 4;
-}
-
-.Resume {
 	border: none;
 	text-decoration: none;
-	background: linear-gradient(0deg, rgb(37, 52, 77) 0%, rgb(0, 0, 0) 100%);
+	background: linear-gradient(
+		0deg,
+		rgb(35, 60, 102) 0%,
+		rgb(19, 26, 52) 100%
+	);
+	position: relative;
 }
+
 .Resume:hover {
 	color: #7fffd4;
 	background: transparent;
 	box-shadow: none;
+}
+.Resume:before,
+.Resume:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 2px;
+	width: 0;
+	background: #52e8ff;
+	box-shadow: -1px -1px 5px 0px #fff;
+	transition: 400ms ease all;
+}
+.Resume:after {
+	right: inherit;
+	top: inherit;
+	left: 0;
+	bottom: 0;
+}
+.Resume:hover:before,
+.Resume:hover:after {
+	width: 100%;
+	transition: 800ms ease all;
 }
 
 /* Cursor */
@@ -204,7 +230,7 @@ main {
 	position: fixed;
 	width: 100%;
 	height: 100%;
-	background-color: #000;
+	background-color: rgb(13, 23, 43);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 50%;
