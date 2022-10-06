@@ -1,0 +1,19 @@
+{
+    "name": "Aryan Srivastava",
+    "short_name": "Aryan Srivastava",
+    "start_url": "public/index.html",
+    "display": "standalone",
+    "description": "Aryan Srivastava's Portfolio website",
+    "theme_color": "#0d172b",
+    "background_color": "#0d172b",
+    "icons":[
+        {
+            "src":"/public/assets/android-chrome-192x192.png",
+            "sizes":"192x192","type":"image/png"
+        },
+        {
+            "src":"/public/assets/android-chrome-512x512.png",
+            "sizes":"512x512","type":"image/png"
+        }
+    ]
+}
